@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zara Search</title>
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://static.zara.net/stdstatic/1.52.1-b.6/images/logo-zara-16.svg" alt="ZARA United States" class="svg black" itemprop="logo">
+    </div>
+    <div class="search">
+      <!-- <form> -->
+        <input class="search-input" type="text" placeholder="Search" >
+        <button class="search-btn" ><i class="fa fa-search" aria-hidden="true"></i></button>
+        <span class="seperator">|</span>
+        <button id="filter-btn" class="search-btn" onclick="showFilters()"> Filter</button>
+     <!--  </form>  --> 
+    </div>
+    <div id="filters">
+      <img src="filters.png">
+    </div>
+  </header>
+  <section class="main">
+    <div class="results">
+      <ul class="departments">
+        <li>
+          <a href="https://www.zara.com/us/en/search?searchTerm=shoes">
+            <img src="womens.png">
+            <h1>Women's</h1>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.zara.com/us/en/search?searchTerm=shoes">
+            <img src="trf.png">
+            <h1>TRF</h1>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.zara.com/us/en/search?searchTerm=shoes">
+            <img src="mens.png">
+            <h1>Men's</h1>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.zara.com/us/en/search?searchTerm=shoes">
+            <img src="kids.png">
+            <h1>Kid's</h1>
+          </a>
+        </li>
+      </ul>
+      <div class="search-info">
+        <div class="result-count">You're search for '<b>shoe's</b>' returned <b>1203</b> results</div>
+          <div class="dropdown">
+            <button class="dropbtn">Sort by: &#8659;</button>
+            <div class="dropdown-content">
+              <a href="#">Relevance</a>
+              <a href="#">Price</a>
+            </div>
+          </div>
+        </div>
+      
+      <ul>
+        <img src="results.png" class="result-img">
+      </ul>
+    </div>
+  </section>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
